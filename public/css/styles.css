@@ -1,9 +1,21 @@
 body {
   padding: 0;
   margin: 0;
+ 
+ /* The image used */
+ background-image: url("../media/desert-hope.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-ul {
+.container {
+  width: 600px !important;
   float: left;
 }
 
@@ -11,3 +23,16 @@ ul {
 li {
   list-style: none;
 }
+
+.list-group {
+  width: 250px;
+  float: left;
+  padding-left: 15px !important;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: #000 !important;
+    background-color: #e7e7e7 !important;
+    border-color: #c8c8c8 !important;
+} 
