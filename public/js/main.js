@@ -1,7 +1,3 @@
-function append(parent, el) {
-  return parent.appendChild(el);
-}
-
 const ul = document.getElementById('movies');
 const url = 'https://swapi.co/api/films/?format=json';
 
