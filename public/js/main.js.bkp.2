@@ -1,0 +1,20 @@
+const ul = document.getElementById('films');
+//const url = 'https://swapi.co/api/films/01/?format=json';
+//const url = 'https://api.myjson.com/bins/8es6q';
+const url = 'https://randomuser.me/api/?results=1';
+
+fetch(url)
+  .then((resp)=> resp.json())
+  .then(function(data) => {
+    
+    let contents = data.results;
+
+    return contents.map(function(author) {
+      let li = document.createElement('li');
+      li.innerHTML = `The Title is ${author.title}`;
+      document.body.appendChild(ul, li);
+    })
+  })
+  .catch(function(error) {
+    console.log(error);
+  });

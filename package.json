@@ -1,0 +1,19 @@
+{
+  "name": "swapi_app",
+  "version": "1.0.0",
+  "description": "Returns data from SWAPI",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/marcelfox/swapi_app"
+  },
+  "author": "MarcelFox",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "swapi-node": "^0.4.4"
+  }
+}

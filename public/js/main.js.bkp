@@ -1,0 +1,16 @@
+fetch("https://swapi.co/api/films/01/?format=json").then(
+  function(response){
+    return response.json();
+    }
+).then(function(jsonData){
+  
+  // console.log(res instanceof Array); // Check if Array
+  jsonData.map(function(chunk)=>{
+
+    let p = document.createElement("p");
+    p.innerHTML = `${chunk.title}`;
+    document.body.appendChild(p);
+  
+  });
+
+});
